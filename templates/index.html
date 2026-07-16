@@ -1,1 +1,44 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raksha Safety - Extreme Risk AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial; background: #000; color: white; text-align: center; padding: 20px; }
+        .box { background: #111; padding: 20px; border-radius: 15px; margin: 20px auto; max-width: 400px; }
+        h1 { color: #FF0000; }
+        button { background: red; color: white; padding: 15px 40px; border: none; border-radius: 10px; font-size: 20px; }
+        #result { padding: 20px; border-radius: 10px; margin-top: 20px; font-size: 18px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>BIHAR FIRST. BIHARI FIRST.</h1>
+        <h2>Raksha Safety AI</h2>
+        
+        <input type="number" id="age" placeholder="Age" value="22"><br><br>
+        <button onclick="checkRisk()">CHECK RISK</button>
+        
+        <div id="result">Result yaha dikhega</div>
+    </div>
+
+<script>
+async function checkRisk() {
+    let age = document.getElementById("age").value;
+    let hour = new Date().getHours();
+    let time_night = (hour > 20 || hour < 6) ? 1 : 0;
+    
+    let res = await fetch("/predict", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({age: age, location_score: 3, time_night: time_night})
+    });
+    let data = await res.json();
+    
+    document.getElementById("result").innerHTML = data.risk + "<br>" + data.message;
+    document.getElementById("result").style.background = data.color;
+}
+</script>
+</body>
+</html>
