@@ -1,4 +1,4 @@
-
+ki
 # RAKSHA SAFETY - EXTREME RISK AI
 ## BIHAR FIRST. BIHARI FIRST. INDIA FIRST.
 
@@ -36,9 +36,9 @@ Hum aapka data nahi bechte. SOS ke time location sirf 24 ghante ke liye encrypte
 **Founder & Developer**  
 Chandan kumar  
 Patna, Bihar, India  
-Email: [chandanjha2016@gmail.com]  
-LinkedIn: [linkedin.com/in/chandan kumar]  
-github : [https://chandanjha2016@gmail.com]
+Email: chandanjha2016@gmail.com
+LinkedIn: linkedin.com/in/chandankumar 
+github : https://github.com/chandanjha2016-prog
 **Vision**: "Har Beti Surakshit, Har Ghar Surakshit"
 
 Made with ❤️ in Bihar
