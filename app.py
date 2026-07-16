@@ -1,13 +1,9 @@
 import streamlit as st
 
-st.set_page_config(page_title="Raksha Safety AI", layout="centered")
+st.set_page_config(page_title="Raksha Safety", page_icon="🛡️")
 st.title("🛡️ RAKSHA SAFETY AI")
-st.write("BIHAR FIRST. BIHARI FIRST. INDIA FIRST.")
+st.write("### BIHAR FIRST - Women's Safety Platform")
+st.write("DPIIT & SFSS Ready")
 
-if st.button("🚨 SOS BUTTON - HELP"):
-    st.error("EXTREME RISK! Location sent to 108 + Family")
-    
-if st.button("CHECK RISK"):
-    st.warning("HIGH RISK - Raat 10 baje sunsaan area")
-
-st.success("App Live hai. DPIIT ke liye ready")
+st.button("🚨 SOS BUTTON")
+st.success("App Successfully Deployed")
